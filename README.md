@@ -1,6 +1,6 @@
 # README
 
-The repo for the project's frontend can be found at: https://github.com/victoriaehrbar/productivity-tracker-frontend
+The repo for this project's frontend can be found at: https://github.com/victoriaehrbar/productivity-tracker-frontend
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

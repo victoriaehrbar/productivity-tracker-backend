@@ -1,4 +1,4 @@
 class Habit < ApplicationRecord
     belongs_to :month
-    validates :completed, presence: true
+    validates :description, presence: true
 end

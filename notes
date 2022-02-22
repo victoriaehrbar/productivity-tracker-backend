@@ -1,0 +1,8 @@
+Month
+has_many :habits
+  :name - string
+
+Habit
+belongs_to :month
+  :month_id - integer, :completed - boolean, :date - datetime,
+  :description - string

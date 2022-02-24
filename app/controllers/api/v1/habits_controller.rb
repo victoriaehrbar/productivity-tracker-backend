@@ -1,2 +1,2 @@
-class HabitsController < ApplicationController
+class Api::V1::HabitsController < ApplicationController
 end

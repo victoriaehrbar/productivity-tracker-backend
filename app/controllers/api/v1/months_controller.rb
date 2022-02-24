@@ -1,2 +1,2 @@
-class MonthsController < ApplicationController
+class Api::V1::MonthsController < ApplicationController
 end

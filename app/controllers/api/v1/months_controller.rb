@@ -14,5 +14,6 @@ class Api::V1::MonthsController < ApplicationController
     private
 
     def month_params
+        params.require(:month).permit(:name)
     end
 end

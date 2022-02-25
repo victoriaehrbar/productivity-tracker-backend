@@ -12,5 +12,10 @@ class Api::V1::HabitsController < ApplicationController
     def destroy
     end
 
-    
+    private
+
+    def habit_params
+    end
+
+
 end

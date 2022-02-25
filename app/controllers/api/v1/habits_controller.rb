@@ -8,4 +8,9 @@ class Api::V1::HabitsController < ApplicationController
 
     def show
     end
+
+    def destroy
+    end
+
+    
 end

@@ -14,6 +14,8 @@ class Api::V1::MonthsController < ApplicationController
       end
 
     def show
+        @month = Month.find(params[:id])
+        render json: @month
     end
 
     def destroy

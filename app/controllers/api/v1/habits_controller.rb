@@ -15,6 +15,7 @@ class Api::V1::HabitsController < ApplicationController
     private
 
     def habit_params
+        params.require(:habit).permit(:month_id, :completed, :date, :description)
     end
 
 

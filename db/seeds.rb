@@ -9,3 +9,5 @@
 month = Month.create(name: 'February')
 
 habit = Habit.create(month_id: 1, completed: true, date: DateTime.now, description: 'Drink a gallon of water per day')
+
+habit_two = Habit.create(month_id: 1, completed: false, date: DateTime.now, description: 'Make bed every day')

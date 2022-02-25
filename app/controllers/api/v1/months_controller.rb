@@ -5,7 +5,13 @@ class Api::V1::MonthsController < ApplicationController
     end
 
     def create
-    end
+        @month = Month.new(month_params)
+        if @month.save
+          render json: @month
+        else
+          render json: {error: 'Error creating month'}
+        end
+      end
 
     def show
     end

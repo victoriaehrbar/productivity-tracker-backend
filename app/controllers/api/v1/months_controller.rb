@@ -19,6 +19,8 @@ class Api::V1::MonthsController < ApplicationController
     end
 
     def destroy
+        @month = Month.find(params[:id])
+        @month.destroy
     end
 
     private

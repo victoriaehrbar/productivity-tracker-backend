@@ -1,5 +1,7 @@
 class Api::V1::HabitsController < ApplicationController
 
+    before_action :set_month
+
     def index
         @habits = Habit.all
         render json: @habits

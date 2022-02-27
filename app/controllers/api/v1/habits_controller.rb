@@ -6,6 +6,8 @@ class Api::V1::HabitsController < ApplicationController
     end
 
     def show
+        @habit = Habit.find(params[:id])
+        render json: @habit
     end
 
     def create

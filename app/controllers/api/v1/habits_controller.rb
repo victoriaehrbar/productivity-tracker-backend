@@ -1,12 +1,14 @@
 class Api::V1::HabitsController < ApplicationController
 
     def index
-    end
-
-    def create
+        @habits = Habit.all
+        render json: @habits
     end
 
     def show
+    end
+
+    def create
     end
 
     def destroy

@@ -18,6 +18,10 @@ class Api::V1::HabitsController < ApplicationController
 
     private
 
+    def set_month
+        @month = Month.find(params[:month_id])
+    end
+
     def habit_params
         params.require(:habit).permit(:month_id, :completed, :date, :description)
     end

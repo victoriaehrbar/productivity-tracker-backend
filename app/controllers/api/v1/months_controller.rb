@@ -9,7 +9,7 @@ class Api::V1::MonthsController < ApplicationController
         if @month.save
           render json: @month
         else
-          render json: {error: 'Error creating that month'}
+          render json: {error: 'Error creating month'}
         end
       end
 

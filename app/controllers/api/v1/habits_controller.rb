@@ -23,6 +23,8 @@ class Api::V1::HabitsController < ApplicationController
     end
 
     def destroy
+        @habit = Habit.find(params[:id])
+        @habit.destroy
     end
 
     private

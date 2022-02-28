@@ -13,6 +13,13 @@ class Api::V1::HabitsController < ApplicationController
     end
 
     def create
+        @habit = @month.habits.new(habit_params)
+        @habit.date = DateTime.new
+        if @habit.save
+            render json: @month
+        else 
+            render json: {error: 'Error saving this habit'}
+        end
     end
 
     def destroy

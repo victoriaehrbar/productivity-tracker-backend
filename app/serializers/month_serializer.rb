@@ -1,3 +1,4 @@
 class MonthSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name
+  has_many :habits
 end

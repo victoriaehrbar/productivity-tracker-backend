@@ -23,6 +23,13 @@ class Api::V1::MonthsController < ApplicationController
         @month.destroy
     end
 
+    def update
+      @month = Month.find(params[:id])
+      @month.update(name: params["month"]["name"])
+      @month.save
+      render json: @month
+    end
+
     private
 
     def month_params
